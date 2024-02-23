@@ -11,7 +11,11 @@
   position: relative;
   flex: 1 0 0;
 }
-.banner-section > img {
+.banner-image {
+  background-image: url(imgs/tanner-van-dera-oaQ2mTeaP7o-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: block;
   width: 100%;
   height: 100%;
