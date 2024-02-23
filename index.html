@@ -20,48 +20,58 @@
 
       <main class="content-section">
         <div class="text-section">
-          <p>
+          <h2>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <em>now</em> to get started.
-          </p>
-          <p>You <em>know</em> you want to.</p>
+            this in your life to help you realize your deepest dreams.
+            <p>
+              Sign up
+              <em>now</em> to get started.
+            </p>
+            <br />
+            <p>You <em>know</em> you want to.</p>
+          </h2>
         </div>
 
-        <form action="/handle-this.js" method="post">
-          <p>Let's do this!</p>
-          <div class="input-fields">
+        <form class="sign-up-form" action="/handle-this.js" method="post">
+          <h3>Let's do this!</h3>
+          <ul class="input-fields">
             <li>
-              <label for="user-fname">FIRST NAME</label
-              ><input type="text" name="fname" id="user-fname" />
+              <div class="input-container">
+                <label for="user-fname">FIRST NAME</label
+                ><input required type="text" name="fname" id="user-fname" />
+              </div>
+              <div class="input-container">
+                <label for="user-lname">LAST NAME</label
+                ><input required type="text" name="lname" id="user-lname" />
+              </div>
             </li>
             <li>
-              <label for="user-lname">LAST NAME</label
-              ><input type="text" name="lname" id="user-lname" />
+              <div class="input-container">
+                <label for="user-email">EMAIL</label
+                ><input required type="email" name="email" id="user-email" />
+              </div>
+              <div class="input-container">
+                <label for="user-tel">PHONE NUMBER</label
+                ><input required type="tel" name="telephone" id="user-tel" />
+              </div>
             </li>
             <li>
-              <label for="user-email">EMAIL</label
-              ><input type="email" name="email" id="user-email" />
+              <div class="input-container">
+                <label for="user-pass">PASSWORD</label
+                ><input required type="password" name="pass" id="user-pass" />
+              </div>
+              <div class="input-container">
+                <label for="user-pass-confirm">CONFIRM PASSWORD</label
+                ><input
+                  required
+                  type="password"
+                  name="pass-confirmation"
+                  id="user-pass-confirm" />
+              </div>
             </li>
-            <li>
-              <label for="user-tel">PHONE NUMBER</label
-              ><input type="tel" name="telephone" id="user-tel" />
-            </li>
-            <li>
-              <label for="user-pass">PASSWORD</label
-              ><input type="password" name="pass" id="user-pass" />
-            </li>
-            <li>
-              <label for="user-pass-confirm">CONFIRM PASSWORD</label
-              ><input
-                type="password"
-                name="pass-confirmation"
-                id="user-pass-confirm" />
-            </li>
-          </div>
-
-          <button type="submit">Create Account</button>
+          </ul>
         </form>
+        <button type="submit" form="sign-up-form">Create Account</button>
         <p>Already have an account? <a href="http://">Log in</a></p>
       </main>
     </div>
