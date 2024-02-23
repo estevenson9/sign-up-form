@@ -13,8 +13,8 @@
       <aside class="banner-section">
         <img src="imgs/tanner-van-dera-oaQ2mTeaP7o-unsplash.jpg" alt="" />
         <div class="banner">
-          <img src="" alt="" />
-          <span>ODIN</span>
+          <img src="imgs/odin-lined.png" alt="" />
+          <h1>ODIN</h1>
         </div>
       </aside>
 
@@ -52,7 +52,12 @@
               </div>
               <div class="input-container">
                 <label for="user-tel">PHONE NUMBER</label
-                ><input required type="tel" name="telephone" id="user-tel" />
+                ><input
+                  required
+                  type="tel"
+                  name="telephone"
+                  id="user-tel"
+                  pattern="04[0-9]{8}" />
               </div>
             </li>
             <li>
@@ -71,8 +76,10 @@
             </li>
           </ul>
         </form>
-        <button type="submit" form="sign-up-form">Create Account</button>
-        <p>Already have an account? <a href="http://">Log in</a></p>
+        <div class="submit-section">
+          <button type="submit" form="sign-up-form">Create Account</button>
+        </div>
+        <p>Already have an account? <a href="#">Log in</a></p>
       </main>
     </div>
   </body>
