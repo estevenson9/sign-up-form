@@ -7,5 +7,60 @@
     <link rel="stylesheet" href="style.css" />
     <script src="sign-in.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="column-box">
+      <aside class="banner-section">
+        <img src="imgs/tanner-van-dera-oaQ2mTeaP7o-unsplash.jpg" alt="" />
+        <div class="banner">
+          <img src="" alt="" />
+          <span>ODIN</span>
+        </div>
+      </aside>
+      <main class="content-section">
+        <div class="text-section">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+            exercitationem, officiis non deleniti eius voluptas voluptate, odio
+            repellat et corporis maxime optio magnam? Veniam amet nemo excepturi
+            voluptatum sequi adipisci?
+          </p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <form action="/handle-this.js" method="post">
+          <p>Let's do this!</p>
+          <div class="input-fields">
+            <li>
+              <label for="user-fname">FIRST NAME</label
+              ><input type="text" name="fname" id="user-fname" />
+            </li>
+            <li>
+              <label for="user-lname">LAST NAME</label
+              ><input type="text" name="lname" id="user-lname" />
+            </li>
+            <li>
+              <label for="user-email">EMAIL</label
+              ><input type="email" name="email" id="user-email" />
+            </li>
+            <li>
+              <label for="user-tel">PHONE NUMBER</label
+              ><input type="tel" name="telephone" id="user-tel" />
+            </li>
+            <li>
+              <label for="user-pass">PASSWORD</label
+              ><input type="password" name="pass" id="user-pass" />
+            </li>
+            <li>
+              <label for="user-pass-confirm">CONFIRM PASSWORD</label
+              ><input
+                type="password"
+                name="pass-confirmation"
+                id="user-pass-confirm" />
+            </li>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="http://">Log in</a></p>
+      </main>
+    </div>
+  </body>
 </html>
